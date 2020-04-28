@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class D2 {
+
+	public static void main(String[] args) {
+		double A,B,C;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Podaj pierwsza liczbe");
+		A = scan.nextDouble();
+		System.out.println("Podaj druga liczbe");
+		B = scan.nextDouble();
+		System.out.println("Podaj trzecia liczbe");
+		C = scan.nextDouble();
+		System.out.println("A = " + A);
+		System.out.println("B = " + B);
+		System.out.println("C = " + C);
+	}
+
+}

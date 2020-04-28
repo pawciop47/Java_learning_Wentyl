@@ -1,0 +1,50 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class D2 {
+	public static double A,B,C;
+	public static double pomoc;
+	public static void wczytaj () {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Podaj pierwsza liczbe");
+		A = scan.nextDouble();
+		System.out.println("Podaj druga liczbe");
+		B = scan.nextDouble();
+		System.out.println("Podaj trzecia liczbe");
+		C = scan.nextDouble();
+		System.out.println("A = " + A);
+		System.out.println("B = " + B);
+		System.out.println("C = " + C);
+	}
+	public static void zamien ( double jeden, double dwa) {
+		double pomoc;
+		pomoc = jeden;
+		jeden = dwa;
+		dwa = pomoc;
+	}
+	public static void wyswietl () {
+		System.out.println("A = " + A);
+		System.out.println("B = " + B);
+		System.out.println("C = " + C);
+	}
+
+	public static void main(String[] args) {
+		wczytaj();
+		if (A>B) {
+		pomoc = A;
+		A = B;
+		B = pomoc;
+		}
+		if (A>C) {
+			pomoc = A;
+			A = C;
+			C = pomoc;
+			}
+		if (B>C) {
+			pomoc = B;
+			B = C;
+			C = pomoc;
+			}
+		wyswietl();
+	}
+
+}
